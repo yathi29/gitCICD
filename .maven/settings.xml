@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+   <servers>
+      <!-- MuleSoft Nexus EE Repository -->
+      <server>
+         <id>MuleRepository</id>
+         <!-- Provided by Support -->
+         <username>${u}</username>
+         <password>${p}</password>
+      </server>
+   </servers>
+   <profiles>
+      <profile>
+         <id>Mule</id>
+         <activation>
+            <activeByDefault>true</activeByDefault>
+         </activation>
+         <repositories>
+            <repository>
+               <id>MuleRepository</id>
+               <name>MuleRepository</name>
+               <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+               <layout>default</layout>
+               <releases>
+                  <enabled>true</enabled>
+               </releases>
+               <snapshots>
+                  <enabled>true</enabled>
+               </snapshots>
+            </repository>
+         </repositories>
+      </profile>
+   </profiles>
+</settings>
