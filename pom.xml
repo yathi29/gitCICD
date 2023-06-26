@@ -35,7 +35,7 @@
 				      <muleVersion>4.4.0-20220824</muleVersion>
 				      <username>${username}</username>
 				      <password>${password}</password>
-				      <applicationName>$appname}</applicationName>
+				      <applicationName>${appname}</applicationName>
 				      <environment>${environment}</environment>
 				      <region>${region}</region>
 				      <workers>${workers}</workers>
